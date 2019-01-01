@@ -1,0 +1,116 @@
+.main-wrapper
+{
+    /* overflow: hidden; */
+    background-color: #ffffff;
+
+}
+/* left block starts here */
+.left-block{
+    border:1px solid;
+    height:100vh;
+    width:50%;
+    position:fixed;
+    display:block;
+float:left;
+
+}
+.left-block .left-block-data{
+  top:50%;
+  transform:translateY(50%);
+    position: absolute;
+    z-index: 1;
+    color:#fff;
+}
+.left-block .left-block-data h1
+{
+    font-weight:700;
+    line-height:2.1rem;
+    font-size:2.2rem;
+    /* margin-bottom:0.5rem; */
+
+}
+.left-block .left-block-data p{
+    margin-bottom:1rem;
+    font-size:1.1rem;
+}
+.left-block .left-block-data .social-icons > div a{
+    color: #fff;
+    border: 0.1rem solid #f1f1f142;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 100%;
+    display: inline;
+    margin-left:0.4rem;
+    margin-right:0.4rem;
+    transition:0.2s ease-in;
+    height:2rem;
+    width:2rem ;
+    text-align: center;
+}
+.left-block .left-block-data .social-icons > div a:hover{
+    text-decoration: none;
+    border: 0.1rem solid #fff;
+}
+.profile-img
+{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://uicookies.com/demo/theme/onlinecv/img/img-profile.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-origin: border-box;
+    background-size: cover;
+}
+.profile-img::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    background: linear-gradient(
+        -30deg,
+        rgba(42, 84, 245, 0.5) 0%,
+        rgba(42, 84, 245, 0.5) 40%,
+        transparent 60%,
+        transparent 100%
+        )
+}
+/* left block ends here */
+/* right block ends here */
+.right-block{
+    border:1px solid;
+    height:100vh;
+    float:right;
+    width:50%;
+}
+/* right block ends here */
+/* media query starts here */
+@media(max-width:600px)
+{
+.left-block
+{
+    position: relative;
+    float:none;
+    width:100%;
+}
+.left-block .left-block-data{
+        top:50%;
+        transform: translateY(50%);
+}
+.right-block
+{
+    float:none;
+    width:100%;
+}
+}
+
+
+/* media query ends here */
